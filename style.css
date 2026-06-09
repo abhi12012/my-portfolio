@@ -1,27 +1,86 @@
-body {
-    font-family: Arial;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
 }
 
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+/* Header / Hero */
 header {
-    background: #333;
-    color: white;
-    padding: 20px;
+    text-align: center;
+    padding: 80px 20px;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
+header h1 {
+    font-size: 3rem;
+    color: #38bdf8;
 }
 
-.card {
-    background: #e3e3e3;
-    padding: 15px;
+header h2 {
+    font-size: 1.5rem;
     margin-top: 10px;
-    border-radius: 10px;
+    color: #f1f5f9;
+}
+
+header p {
+    margin-top: 10px;
+    color: #94a3b8;
+}
+
+header a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+header a:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Headings */
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #38bdf8;
+}
+
+/* Cards (Projects) */
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+}
+
+/* Contact */
+.contact p {
+    margin-top: 10px;
+    color: #cbd5e1;
 }
